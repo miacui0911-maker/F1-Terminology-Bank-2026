@@ -147,3 +147,62 @@ https://github.com/miacui0911-maker/F1-Chinese-English-Terminology-Database
 5. **许可证范围**：本库数据内容（CSV文件及说明文档）采用CC BY 4.0许可证。引用或二次开发时须注明来源，不得暗示原作者为衍生作品背书。
 
 > This database is built for academic purposes as part of an MTI thesis project. It does not reproduce copyrighted article content and has no affiliation with Formula One Group, FIA, or any F1 team. All trademarks belong to their respective owners.
+---
+
+## 术语预览 Terminology Preview
+
+以下为各领域代表性术语样例。完整284条词条见 [`data/terminology.csv`](./data/terminology.csv)。
+
+### 🌬️ 空气动力学 Aerodynamics
+
+| 英文原词 | 首选译名 | 禁用译名 | 简要定义 |
+|---|---|---|---|
+| ground effect | 地面效应 | 地面摩擦效应 | 利用赛车底部与赛道之间气流加速产生低压区，从而生成下压力的气动现象 |
+| downforce | 下压力 | 下压 | 气流在赛车各气动面产生的垂直向下气动力，是弯道速度的核心参数 |
+| centreline cooling | 中轴线冷却 | 中央冷却/轴心冷却 | 将主要冷却器集中布置于车辆纵向中轴附近，释放侧箱气动通道的冷却方案 |
+| porpoising | 海豚跳 | 底板振荡/颠簸 | 地面效应规则下赛车底板气流周期性分离引起的车身高频垂向振荡 |
+| desensitised aerodynamics | 气动去敏化 | 稳定气动设计 | 使气动性能对车身姿态变化不敏感、在更宽工况范围内保持稳定输出的开发策略 |
+| rake | 倾角/车身纵倾 | 俯仰角 | 赛车前低后高（或相反）的纵向倾斜姿态，通过前后离地间隙差实现 |
+
+### 🔧 悬挂与底盘 Suspension & Chassis
+
+| 英文原词 | 首选译名 | 禁用译名 | 简要定义 |
+|---|---|---|---|
+| compliance | 顺应性 | 柔性变形/松动 | 悬挂连接件在载荷下允许的微小弹性变形特性，适当顺应性可提高操控一致性 |
+| anti-dive | 抗俯冲 | 防前倾 | 通过悬挂几何使制动时产生对抗前俯力矩，维持车身平台稳定性 |
+| anti-squat | 抗蹲尾 | 防后沉 | 通过悬挂几何使加速时产生对抗后蹲力矩，减少加速姿态变化 |
+| pushrod | 推杆 | 前推连杆 | 连接悬挂下部与弹簧/减震器总成的传力杆件，车轮向上时受压 |
+| pullrod | 拉杆 | 后拉连杆 | 连接悬挂上部与弹簧/减震器总成的传力杆件，车轮向上时受拉，有助于降低重心 |
+| torsional stiffness | 扭转刚度 | 抗扭刚性 | 结构抵抗扭转变形的能力（Nm/deg），直接影响悬挂几何有效性 |
+
+### ⚡ 动力总成与ERS Powertrain & ERS
+
+| 英文原词 | 首选译名 | 禁用译名 | 简要定义 |
+|---|---|---|---|
+| power unit (PU) | 动力单元 | 发动机 | 包含ICE、涡轮增压器、MGU-K/H及储能单元的F1混合动力系统整体 |
+| ERS deployment | ERS能量部署 | 能量释放 | 在特定赛道区段将电池电能通过MGU-K释放提供额外动力的策略操作 |
+| MGU-K | MGU-K（动能电机发电单元） | K电机 | 连接传动系统、制动时回收动能、加速时释放电能的电机单元，最大120kW |
+| cost cap | 成本帽 | 预算上限 | FIA自2021年引入的年度运营支出上限，限制气动开发配额及零件迭代频次 |
+| charge air cooler | 增压空气中冷器 | 中冷器 | 对涡轮增压后高温进气进行冷却的热交换器，提升充气效率 |
+
+### 🏎️ 轮胎与热管理 Tyres & Thermal Management
+
+| 英文原词 | 首选译名 | 禁用译名 | 简要定义 |
+|---|---|---|---|
+| thermal degradation | 热衰退 | 热衰减/热磨损 | 轮胎橡胶高温下抓地力下降的现象，**降温后可部分恢复**（区别于不可逆磨损） |
+| tyre window | 轮胎工作窗口 | 最佳温度区间 | 轮胎配合物能正常提供最大抓地力的工作温度范围，是策略决策的核心边界 |
+| graining | 起粒 | 搓皮/橡胶剥落 | 轮胎表面橡胶在滑动中形成小颗粒翻滚的磨损形式，通常因胎温不足引起 |
+| contact patch | 接触印痕 | 接触面积 | 轮胎与赛道实际接触的橡胶区域，影响最大摩擦力和侧向抓地力上限 |
+| blistering | 起泡 | 鼓泡 | 轮胎严重过热时内部气泡破裂形成表面鼓泡，通常须立即进站更换 |
+
+### 📊 策略与运营 Strategy & Operations
+
+| 英文原词 | 首选译名 | 禁用译名 | 简要定义 |
+|---|---|---|---|
+| undercut | 内停策略 | 提前进站 | 早于对手进站换新胎，利用新胎圈速优势在出站口完成超越的比赛策略 |
+| overcut | 外停策略 | 延迟进站 | 晚于对手进站、利用持续积累时间差完成超越的比赛策略 |
+| free stop | 免费进站 | 无代价进站 | 安全车/VSC期间进站，因全场降速使进站时间损失大幅降低的策略机会 |
+| platform control | 平台控制 | 车身姿态控制 | 精确控制赛车车身姿态（离地间隙、俯仰、横滚）稳定性，使气动系统持续高效工作 |
+| tyre management | 轮胎管理 | 轮胎保护 | 通过驾驶风格调整和策略规划延长轮胎寿命并保持工作窗口的综合技术工作 |
+
+> 💡 **使用提示**：`zh_forbidden` 列标注了会导致技术误解的错误译名，翻译时应严格避免。每条术语的完整定义、适用工况及误用风险详见CSV文件。
